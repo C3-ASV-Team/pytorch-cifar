@@ -1,4 +1,4 @@
-# Train CIFAR10 with PyTorch
+# Tutorial: Train CIFAR10 with PyTorch on NERSC Cori-GPU
 
 I'm playing with [PyTorch](http://pytorch.org/) on the CIFAR10 dataset.
 
