@@ -2,7 +2,7 @@
 
 Here is a tutorial how to train deep learning models on the CIFAR10 dataset on Cori-GPU platform using [PyTorch](http://pytorch.org/).
 
-(TBD)
+(TBD...)
 
 ## Prerequisites
 - Python 3.6+
