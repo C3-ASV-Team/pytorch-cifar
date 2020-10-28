@@ -22,6 +22,8 @@ sbatch train_cgpu.sh
 ```
 The dashboard on `my.nersc.gov` sometimes cannot correctly display jobs running on the GPU cluster, so a better way is to run `jobstats` in the terminal to view the job status. When the job starts running, its status will change from `PENDING` to `RUNNING`.
 
+In the batch mode, the results will be redirected to `<job_id>.out`, under your working directory by default.
+
 ---
 ## Prerequisites
 - Python 3.6+
