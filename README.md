@@ -2,7 +2,7 @@
 
 Here is a tutorial how to train deep learning models on the CIFAR10 dataset on Cori-GPU platform using [PyTorch](http://pytorch.org/).
 
-## Submit interactive job
+## Submit an interactive job
 
 First you'd need to request one or more GPU using the following script. See [this page](https://docs-dev.nersc.gov/cgpu/access/) for further details.
 ```
@@ -15,11 +15,12 @@ module load pytorch-1.5.0/gpu
 srun python main.py
 ```
 
-## Submit batch job
+## Submit a batch job
 Run the following commands for submitting a batch job.
 ```
 sbatch train_cgpu.sh
 ```
+The dashboard on `my.nersc.gov` sometimes cannot correctly display jobs running on the GPU cluster, so a better way is to run `jobstats` in the terminal to view the job status. When the job starts running, its status will change from `PENDING` to `RUNNING`.
 
 ---
 ## Prerequisites
