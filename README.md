@@ -11,7 +11,7 @@ salloc -C gpu -N 1 -t 60 -c 10 -G 1 -A m3691
 ```
 Then run the following commands to kick off training.
 ```
-module load pytorch/1.5.0-gpu
+module load pytorch/v1.5.0-gpu
 srun python main.py
 ```
 
