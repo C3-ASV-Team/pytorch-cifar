@@ -30,15 +30,15 @@ The dashboard on `my.nersc.gov` sometimes cannot correctly display jobs running 
 
 In the batch mode, the results will be redirected to `<job_id>.out`, under your working directory by default.
 
-## Continously run on NERSC
+## Continuously training on NERSC
 
 Run the following command for continuously training on NERSC
 
 ```sh
-python train_nersc.py --name cifar --interval 60 > cifar.log &
+python -u train_nersc.py --name cifar --interval 60 > cifar.log &
 ```
 
-The interval is # minutes between two status checking for re-launch.
+The interval is # minutes between two status checking for re-launch. `-u` to force no buffering.
 
 To quickly test the script's validity, try setting time in `train_cgpu.sh` to be 3 minutes and run
 
