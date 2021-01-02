@@ -7,7 +7,7 @@ Here is a tutorial how to train deep learning models on the CIFAR10 dataset on C
 First you'd need to request one or more GPU using the following script. See [this page](https://docs-dev.nersc.gov/cgpu/access/) for further details.
 
 ```sh
-module load esslurm
+module load cgpu
 salloc -C gpu -N 1 -t 60 -c 10 -G 1 -A m3691
 ```
 
